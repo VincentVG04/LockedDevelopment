@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylered.css">
+    <title>Locked Development</title>
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        // press H for Homepage
+        document.addEventListener("keydown", event => {
+            if (event.isComposing || event.keyCode !== 72) {
+                return;
+            }
+            myFunctionhome();
+        });
+        function myFunctionhome() {
+            window.location = "index.html";
+        }
+    </script>
+</body>
+
+</html>

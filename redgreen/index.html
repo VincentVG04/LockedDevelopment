@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <style type="text/css">
+        body {
+            background-image: url(redorgreenpng.png);
+        }
+    </style>
+
     <script>
         // press R for red
         document.addEventListener("keydown", event => {
@@ -18,7 +24,7 @@
             myFunctionred();
         });
         function myFunctionred() {
-            document.body.style.backgroundColor = "#ff0000";
+            window.location = "red.html";
         }
     </script>
 
@@ -31,7 +37,7 @@
             myFunctiongreen();
         });
         function myFunctiongreen() {
-            document.body.style.backgroundColor = "#00FF00";
+            window.location = "green.html";
         }
     </script>
 </body>
