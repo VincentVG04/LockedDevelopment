@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked Development</title>
+</head>
+
+<body>
+    <script>
+        // press R for red
+        document.addEventListener("keydown", event => {
+            if (event.isComposing || event.keyCode !== 82) {
+                return;
+            }
+            myFunctionred();
+        });
+        function myFunctionred() {
+            document.body.style.backgroundColor = "#ff0000";
+        }
+    </script>
+
+    <script>
+        // press G for green
+        document.addEventListener("keydown", event => {
+            if (event.isComposing || event.keyCode !== 71) {
+                return;
+            }
+            myFunctiongreen();
+        });
+        function myFunctiongreen() {
+            document.body.style.backgroundColor = "#00FF00";
+        }
+    </script>
+</body>
+
+</html>
